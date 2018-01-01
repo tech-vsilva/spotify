@@ -6,12 +6,12 @@ Installs `spotify-client`.
 Requirements
 ------------
 
-- ** Ansible ** >= 2.4
+- **Ansible** >= 2.4
 
 Role Variables
 --------------
 
-- ** spotify_package ** : name of the spotify package, default `spotify-client`.
+- **spotify_package** : name of the spotify package, default `spotify-client`.
 
 
 Example Playbook
