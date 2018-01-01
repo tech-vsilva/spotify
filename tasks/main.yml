@@ -1,0 +1,6 @@
+---
+# tasks file for spotify
+
+
+- include_tasks: setup-apt.yml
+  when: ansible_pkg_mgr == 'apt'

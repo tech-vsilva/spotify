@@ -1,0 +1,4 @@
+---
+# defaults file for spotify
+
+spotify_package: "spotify-client"

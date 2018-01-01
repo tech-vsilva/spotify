@@ -1,0 +1,20 @@
+---
+
+# via https://www.spotify.com/de/download/linux/
+
+- name: Add the Spotify repository signing keys to be able to verify downloaded packages
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 0DF731E45CE24F27EEEB1450EFDC8610341D9410
+
+- name: "Add the Spotify repository"
+  apt_repository:
+    repo: "deb http://repository.spotify.com stable non-free"
+    filename: "spotify"
+    state: present
+    update_cache: "yes"
+
+- name: "Install Spotify"
+  apt:
+    name: "{{ spotify_package }}"
+    state: present
