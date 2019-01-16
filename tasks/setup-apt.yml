@@ -5,7 +5,7 @@
 - name: Add the Spotify repository signing keys to be able to verify downloaded packages
   apt_key:
     keyserver: keyserver.ubuntu.com
-    id: 0DF731E45CE24F27EEEB1450EFDC8610341D9410
+    id: 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 
 - name: "Add the Spotify repository"
   apt_repository:
